@@ -72,7 +72,8 @@ function EditTask({ activetask, onBack, onSave }: Props) {
       checklist: isChecklist ? checklist : [],
       deadline: deadline instanceof Date && !isNaN(deadline.getTime()) ? deadline.toISOString() : undefined,
 
-      updatedAt: new Date(),
+      updated_at: new Date().toISOString(),
+
     }
 
     onSave?.(updatedTask)
