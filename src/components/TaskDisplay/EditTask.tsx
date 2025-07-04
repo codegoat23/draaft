@@ -70,7 +70,8 @@ function EditTask({ activetask, onBack, onSave }: Props) {
       mood: mood || '',
       content: !isChecklist ? content : '',
       checklist: isChecklist ? checklist : [],
-      deadline: deadline instanceof Date && !isNaN(deadline.getTime()) ? deadline : undefined,
+      deadline: deadline instanceof Date && !isNaN(deadline.getTime()) ? deadline.toISOString() : undefined,
+
       updatedAt: new Date(),
     }
 
