@@ -20,7 +20,7 @@ import { JSX } from 'react/jsx-runtime'
 import Frustrated from '../moods/frustrated'
 
 type Props = {
-  task: Task
+  
   tasks: Task[]
   onCreate: (task: Task) => void
   onSelectedTask: (task: Task) => void
