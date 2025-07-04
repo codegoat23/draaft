@@ -15,6 +15,6 @@ export type Task = {
 }
 
 
-export type Props = {
+export type TasksProps = {
   onCreate: (task: Partial<Task>) => void
 }
