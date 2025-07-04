@@ -27,7 +27,10 @@ function EditTask({ activetask, onBack, onSave }: Props) {
   const [title, setTitle] = useState(activetask.title || '')
   const [content, setContent] = useState(activetask.content || '')
   const [checklist, setChecklist] = useState(activetask.checklist || [])
-  const [deadline, setDeadline] = useState<Date>(activetask.deadline)
+  const [deadline, setDeadline] = useState<Date | undefined>(
+    activetask.deadline ? new Date(activetask.deadline) : undefined
+  )
+  
   const [mood, setMood] = useState<string>(activetask.mood || '')
   const [isSaving, setIsSaving] = useState(false)
 
