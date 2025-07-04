@@ -22,7 +22,7 @@ import Frustrated from '../moods/frustrated'
 type Props = {
   
   tasks: Task[]
-  onCreate: (task: Task) => void
+  onCreate: (task: Partial<Task>) => void  
   onSelectedTask: (task: Task) => void
   onDelete: (task: Task) => void  // <-- new prop
 }
