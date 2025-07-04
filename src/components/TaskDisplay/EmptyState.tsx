@@ -1,6 +1,6 @@
 import React from 'react'
 import { TaskProps } from '@/lib/types'
-import NewTask from '../AddTask/NewTask'
+
 import NewButton from '../AddTask/NewButton'
 
 

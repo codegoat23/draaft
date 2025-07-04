@@ -2,7 +2,7 @@
 
 import { Task } from '@/lib/types'
 import NewButton from '../AddTask/NewButton'
-import { motion } from 'framer-motion'
+
 import {
   Card,
   CardContent,

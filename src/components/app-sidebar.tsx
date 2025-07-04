@@ -28,6 +28,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import Image from "next/image"
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const [userEmail, setUserEmail] = useState<string | null>(null)
@@ -81,7 +82,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <a href="/">
-                <img src="/images/draafticon.png" alt="" className="w-auto h-18"/>
+                <Image src="/images/draafticon.png" alt="" className="w-auto h-18"/>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
