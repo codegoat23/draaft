@@ -14,7 +14,7 @@ function NewTask({ onCreate }: NewTaskProps) {
     const newTask: Partial<Task> = {
       title: '',
       content: '',
-      checklist: null, // make sure it's null or undefined if not used
+      checklist: [], // make sure it's null or undefined if not used
     }
 
     onCreate(newTask)
