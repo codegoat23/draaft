@@ -166,10 +166,10 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"div">)
           </form>
 
           <div className="bg-muted relative hidden md:block">
-            <Image
+            <img
               src="/images/Task-cuate.png"
               alt="Signup image"
-              fill
+              
               className="absolute inset-0 object-cover dark:brightness-[0.2] dark:grayscale"
             />
           </div>
