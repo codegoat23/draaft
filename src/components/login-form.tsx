@@ -107,7 +107,7 @@ export function LoginForm({
        
 
 <Image
-  src="/images/Task-bro.png"
+  src="/Task-bro.png"
   alt="Image"
   fill
   className="absolute inset-0 object-cover dark:brightness-[0.2] dark:grayscale"
