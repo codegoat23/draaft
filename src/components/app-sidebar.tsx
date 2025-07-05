@@ -82,7 +82,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
               <a href="/">
-                <Image src="/images/draafticon.png" alt="" className="w-auto h-18"/>
+                <Image src="/images/draafticon.png" alt="" className=" h-18" width={100} height={18}/>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
