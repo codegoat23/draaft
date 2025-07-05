@@ -10,7 +10,7 @@ type Props = {
   tasks: Task[]
   activetask: Task | null
   isEditing: boolean
-  onCreate: (task: Task) => void
+  onCreate: (task: Partial<Task>) => void
   onSelectedTask: (task: Task) => void
   onBack: () => void
   onSave: (task: Task) => void
