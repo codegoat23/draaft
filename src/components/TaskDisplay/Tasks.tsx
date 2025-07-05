@@ -184,11 +184,14 @@ export default function Tasks({ tasks, onCreate, onSelectedTask, onDelete }: Pro
           <CardDescription className={`text-[10px] flex flex-row text-nowrap items-center gap-1 ${task.deadline && new Date(task.deadline) < new Date() ? 'text-red-500' : ''}`}>
   <IconCalendarCheck className='size-4' />
   {task.deadline
-    ? new Date(task.deadline instanceof Date ? task.deadline : new Date(task.deadline)).toLocaleDateString('en-US', {
-        month: 'short',
-        day: 'numeric',
-        year: 'numeric',
-      })
+    ? new Date(
+      task.deadline instanceof Date ? task.deadline.getTime() : task.deadline
+    ).toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric',
+    })
+    
     : 'No deadline'}
 </CardDescription>
 
