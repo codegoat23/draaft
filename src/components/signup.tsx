@@ -39,8 +39,8 @@ export function SignupForm({ className, ...props }: React.ComponentProps<"div">)
       setError(error.message)
     } else {
       setSuccessMsg('Check your email to verify your account!')
-      // Optionally, redirect or do something else here
-      // router.push('/dashboard')
+     
+      router.push('/dashboard')
     }
   }
 
