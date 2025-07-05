@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from './ui/button'
-
+import Image from 'next/image'
 
 
 function Featured2() {
@@ -21,9 +21,9 @@ function Featured2() {
           </div>
         </div>
 
-        <img
+        <Image
           alt="Product screenshot"
-          src="/images/sp.jpg"
+          src="/snapshot.webp"
           width={2432}
           height={1442}
           className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0"
